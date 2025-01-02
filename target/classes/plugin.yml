@@ -1,0 +1,24 @@
+name: FWCommands
+author: Frostwolf74
+version: '1.20.4'
+main: me.frostwolf74.fwcommands.FWCommands
+api-version: '1.20'
+
+commands:
+  home:
+    description: Teleport to a set home
+  sethome:
+    description: Create player homes
+  spawn:
+    description: Teleport to the world spawn
+  enderchest:
+    description: Open your enderchest
+    aliases:
+      - ec
+  readinventory:
+    description: As an operator, open another player's inventory
+    aliases:
+      - readinv
+      - openinv
+  pause:
+    description: Freeze the entire server for the specified number of seconds
