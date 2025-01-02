@@ -1,0 +1,5 @@
+name: FWWeapons
+author: Frostwolf74
+version: '1.0'
+main: me.frostwolf74.fWWeapons.FWWeapons
+api-version: '1.20'
