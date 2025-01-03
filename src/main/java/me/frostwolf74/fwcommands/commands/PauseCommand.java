@@ -10,12 +10,14 @@ import static java.lang.Thread.sleep;
 public class PauseCommand implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
-        try {
-            commandSender.sendMessage("Pausing for " + strings[0] + " seconds");
-            sleep(Integer.parseInt(strings[0]) * 1000L);
-            commandSender.sendMessage("Done");
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+        if(commandSender.isOp()){
+            try {
+                commandSender.sendMessage("Pausing for " + strings[0] + " seconds");
+                sleep(Integer.parseInt(strings[0]) * 1000L);
+                commandSender.sendMessage("Done");
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
         return true;
     }
