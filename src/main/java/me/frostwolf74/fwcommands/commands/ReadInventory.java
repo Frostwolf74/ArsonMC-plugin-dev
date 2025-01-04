@@ -1,5 +1,7 @@
 package me.frostwolf74.fwcommands.commands;
 
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.TextColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -23,6 +25,7 @@ public class ReadInventory implements CommandExecutor {
                     }
 
                     player.openInventory(p.getInventory());
+                    p.sendMessage(Component.text(player.name() + " is currently viewing your inventory", TextColor.color(255, 255, 0)));
                 }
                 else{
                     player.sendMessage("You are not a server operator.");
