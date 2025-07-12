@@ -2,4 +2,4 @@ name: FWWeapons
 author: Frostwolf74
 version: '${project.version}'
 main: me.frostwolf74.fWWeapons.FWWeapons
-api-version: '1.21.5'
+api-version: '1.21.7'

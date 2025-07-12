@@ -37,7 +37,7 @@ public final class FWWeapons extends JavaPlugin implements Listener {
         lore.add(0 ,Component.text("Blessed by the gods of Arson,"));
         lore.add(1 ,Component.text("strike fire upon your adversaries."));
 
-        swordMeta.addEnchant(Enchantment.DAMAGE_ALL, 10, true);
+        swordMeta.addEnchant(Enchantment.SHARPNESS, 10, true);
 
         swordMeta.getPersistentDataContainer().set(new NamespacedKey(this, "isArsonSword"), PersistentDataType.BOOLEAN, true);
 
